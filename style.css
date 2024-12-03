@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
+    font-style: medium;
+
+}
+:root {
+    --bg-color: #FFF8DC;
+    --second-bg-color: #FF69B4;
+    --text-color: #C71585;
+    --main-color: #FF69B4;
+}
+html {
+    font-size: 70%;
+    overflow-x: hidden;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+.header{
+    position: fixed;
+    width: 100%;
+    padding: 3rem  15%;
+    background: #FFE4C4;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo{
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.logo.hover{
+    transform: scale(1.1);
+}
+span{
+    background: linear-gradient(
+        271deg,
+        #C71585 10%,
+        #FF69B4 100% 
+    );
+    background-clip: text;
+    color: transparent;
+}
+
+
+.navbar a{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-left: 2rem;
+    font-weight: 500;
+    transition: 0.3 ease-in-out;
+    border-bottom: 3px solid transparent;
+}
+.navbar a:hover{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+
+section{
+    min-height: 100vh;
+    padding: 10rem 15%;
+}
+
+navbar a.active {
+    font-weight: bolder;
+    color: #00FA9A;
+}
+
+
+
+.start{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5rem;
+}
+.start.content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+}
+.start-content h1{
+    font-size: 7rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    line-height: 1;
+    color:#FF69B4;
+}
+.start-content h2{
+    margin: 1.5rem;
+    font-size: 3rem;
+    color:#C71585;
+}
+.about h2{
+    font-size: 4rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    line-height: 1;
+    color:#C71585;
+}
+.about h3{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    line-height: 1;
+    color:#FF69B4;
+}
+
+
+
+
+.more{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5rem;
+}
+.gallery h1 {
+    font-size: 5rem;
+    font-weight: 100;
+    margin-top: 1.5rem;
+    line-height: 1;
+    text-align: left;
+}
+.photo-dump {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    width: 250px;
+    margin: 20px;
+    text-align: center;
+}
+.photo-dump img {
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+}
+.photo-dump h3 {
+    margin-top: 10px;
+    font-size: 2.5em;
+    color: #C71585;
+}
+.photo-dump p {
+    font-size: 1.5em;
+    color: #FF69B4;
+}
+
+
+
+
+.Contact me h1 {
+    font-size: 5rem;
+    font-weight: 100;
+    margin-top: 1.5rem;
+    line-height: 1;
+    text-align: left;
+}
+.photo {
+    width: 400px;
+    height: auto;
+}
+
+
+
+
+.table h1 {
+    font-size: 5rem;
+    font-weight: 100;
+    margin-top: 1.5rem;
+    line-height: 1;
+    text-align: left;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-size: cover;
+    background-position: center;
+}
+.background {
+    filter: saturate(50%);
+}
+th, td {
+    border: 2px solid #C71585;
+    padding: 20px;
+    text-align: center;
+    font-size: 3.3em;
+}
+table img {
+    width: 200px;
+    height: auto;
+}
+.norma,.link, .musli {
+    width: 15%;
+}
+
+
+.lists {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5rem;
+}
+.timetable {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 2rem;
+    list-style-position: outside;
+}
+.like {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: flex-start;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #C71585;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.shop h1 {
+    font-size: 5rem;
+    font-weight: 100;
+    margin-top: 1.5rem;
+    line-height: 1;
+    text-align: left;
+}
